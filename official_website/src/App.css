@@ -1,6 +1,9 @@
 * {
   text-align: center;
-  background-color: #000000b8;
+}
+
+.landCont {
+  background-color: rgb(211, 211, 211);
 }
 
 .App-logo {

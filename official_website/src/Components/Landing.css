@@ -1,6 +1,8 @@
 .landingContainer {
   width: 100vw;
-  height: calc(100vh - 130px);
+  height: 95vh;
+  background-color: #000000f7;
+  clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
 }
 
 .clubName {
@@ -18,20 +20,16 @@
 }
 
 .actionBtn {
-  background: linear-gradient(
-    to top,
-    rgba(255, 255, 255, 0.874) 50%,
-    black 50%
-  );
+  background: linear-gradient(to top, rgba(211, 211, 211) 50%, black 50%);
   background-size: 100% 200%;
   border-color: rgb(255, 255, 255);
   color: rgb(134, 134, 134);
-  -webkit-transition: 1s ease-in-out;
 }
 
 .actionBtn:hover {
   color: black;
   animation: buttonFill 0.2s ease-in-out forwards;
+  border-color: rgb(255, 255, 255);
 }
 
 @keyframes buttonFill {

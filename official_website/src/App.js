@@ -1,14 +1,35 @@
-import logo from "./logo.svg";
 import "./App.css";
 import Landing from "./Components/Landing";
+import MainPoints from "./Components/MainPoints";
 import Navigation from "./Components/Navigation";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <div>
-      <Navigation />
-      <Landing />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route
+          path="/"
+          exact
+          element={
+            <div className="landCont">
+              <Navigation />
+              <Landing />
+              <MainPoints />
+            </div>
+          }
+        />
+        <Route
+          path="/about"
+          exact
+          element={
+            <>
+              <Navigation />
+            </>
+          }
+        />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
