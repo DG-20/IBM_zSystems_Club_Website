@@ -1,0 +1,56 @@
+.landingContainer {
+  width: 100vw;
+  height: calc(100vh - 130px);
+}
+
+.clubName {
+  color: white;
+  width: 30vw;
+  font-weight: bold;
+  text-align: center;
+  margin: auto;
+}
+
+.landingAbout {
+  width: 35vw;
+  margin: auto;
+  color: rgb(134, 134, 134);
+}
+
+.actionBtn {
+  background: linear-gradient(
+    to top,
+    rgba(255, 255, 255, 0.874) 50%,
+    black 50%
+  );
+  background-size: 100% 200%;
+  border-color: rgb(255, 255, 255);
+  color: rgb(134, 134, 134);
+  -webkit-transition: 1s ease-in-out;
+}
+
+.actionBtn:hover {
+  color: black;
+  animation: buttonFill 0.2s ease-in-out forwards;
+}
+
+@keyframes buttonFill {
+  0% {
+    background-position: 0% 0%;
+  }
+
+  100% {
+    background-position: 0% 100%;
+    color: black;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .clubName {
+    width: 80vw;
+  }
+
+  .landingAbout {
+    width: 80vw;
+  }
+}
